@@ -13,7 +13,7 @@ class IdCardTestCase(TestCase):
             self.ic.IdCard = ''
 
     def test_invalid_idCard_checkcode(self):
-        self.ic.IdCard = '330726196507040011'
+        self.ic.IdCard = '123789456785678291'
         self.assertFalse(self.ic.IdCard_isvalid())
 
     def test_invalid_idCard(self):
@@ -21,7 +21,7 @@ class IdCardTestCase(TestCase):
             self.ic.IdCard = '45612323'
 
     def test_valid_idCard(self):
-        self.ic.IdCard = '330726196507040016'
+        self.ic.IdCard = '123789456785678295'
         self.assertTrue(self.ic.IdCard_isvalid())
 
     def tearDown(self):

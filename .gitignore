@@ -1,0 +1,7 @@
+
+# module
+*.pyc
+
+# package
+__pycache__
+cache
